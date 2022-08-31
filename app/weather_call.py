@@ -41,8 +41,7 @@ def process_weather_data(raw_weather_data):
     """
 
     today = date.today()
-    # today_formatted = today.strftime("%Y-%m-%d")
-    today_formatted = "2022-09-01"
+    today_formatted = today.strftime("%Y-%m-%d")
 
     def filter_to_today(element):
         date_string = element.get("datetimeStr")[0:10]
